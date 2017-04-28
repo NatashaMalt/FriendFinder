@@ -7,164 +7,143 @@
 </head>
 <body>
  
- <div class="row">
-  <div class="col-sm-12">
-   <div class="jumbotron">
-    <h1> <center>FIND A FRIEND(you lonely loser...)</center> </h1>
-   </div>
-  </div>
- </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FriendFinder</title>
 
- <div class="row">
- <div class="col-sm-6">
- <div class="panel panel-default">
-  <div class="panel-body">To begin, please input your information and answer the simple friend survey at the bottom of the page. You will be matched with a feline friend based on your compatibility. Don't like your feline friend? Too bad.</div>
-</div>
-</div>
-</div>
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
-<div class="row">
-<div class="col-sm-6">
-<div class="form-group">
-  <label for="user-name">Name:</label>
-  <input type="text" class="form-control" id="user-name">
-</div>
-<div class="form-group">
- <label for="img">Paste image link here:</label>
- <input type="text" class="form-control" id="img">
-</div>
-</div>
+  <!-- Font Awesome Glyphicons -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 
+  <!-- Chosen -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
 
-<h2>Feline friend finder survey</h2>
-<div class="row">
-<div class="col-sm-12">
-<div class="panel panel-default">
- <div class="panel-heading">On a scale from 1-5, 1 being not at all and 5 being very much, how much do you like cats?</div>
-  <div class="panel-body"><div class="radio">
-   <label><input type="radio" name="optradio">1</label>
-</div> 
- <label><input type="radio" name="optradio">2</label>
-</div>
- <label><input type="radio" name="optradio">3</label>
-</div>
- <label><input type="radio" name="optradio">4</label>
-</div>
- <label><input type="radio" name="optradio">5</label>
-</div>
-  </div>
-  </div>
-</div>
-</div>
+</head>
+<body>
 
-<div class="panel panel-default">
- <div class="panel-heading">On a scale from 1-5, 1 being not at all and 5 being very much, how much do you like coffee?</div>
-  <div class="panel-body"><div class="radio">
-   <label><input type="radio" name="optradio">1</label>
-</div> 
- <label><input type="radio" name="optradio">2</label>
-</div>
- <label><input type="radio" name="optradio">3</label>
-</div>
- <label><input type="radio" name="optradio">4</label>
-</div>
- <label><input type="radio" name="optradio">5</label>
-</div>
-  </div>
-  </div>
-</div>
-</div>
+  <div class="container">
 
-<div class="panel panel-default">
- <div class="panel-heading">On a scale from 1-5, 1 being not at all and 5 being very much, how much do you like Agatha Christie's novels?</div>
-  <div class="panel-body"><div class="radio">
-   <label><input type="radio" name="optradio">1</label>
-</div> 
- <label><input type="radio" name="optradio">2</label>
-</div>
- <label><input type="radio" name="optradio">3</label>
-</div>
- <label><input type="radio" name="optradio">4</label>
-</div>
- <label><input type="radio" name="optradio">5</label>
-</div>
-  </div>
-  </div>
-</div>
-</div>
+    <h2>Feline friend finder</h2>
+    <hr>
 
-<div class="panel panel-default">
- <div class="panel-heading">On a scale from 1-5, 1 being not at all and 5 being very much, how much do you like cats?</div>
-  <div class="panel-body"><div class="radio">
-   <label><input type="radio" name="optradio">1</label>
-</div> 
- <label><input type="radio" name="optradio">2</label>
-</div>
- <label><input type="radio" name="optradio">3</label>
-</div>
- <label><input type="radio" name="optradio">4</label>
-</div>
- <label><input type="radio" name="optradio">5</label>
-</div>
-  </div>
-  </div>
-</div>
-</div>
+    <h3><strong>About You</strong></h3>
+    <h4>Name</h4>
+    <input type="text" name="" id="name" class="form-control" required >
 
-<div class="panel panel-default">
- <div class="panel-heading">On a scale from 1-5, 1 being not at all and 5 being very much, how much do you like sleeping?</div>
-  <div class="panel-body"><div class="radio">
-   <label><input type="radio" name="optradio">1</label>
-</div> 
- <label><input type="radio" name="optradio">2</label>
-</div>
- <label><input type="radio" name="optradio">3</label>
-</div>
- <label><input type="radio" name="optradio">4</label>
-</div>
- <label><input type="radio" name="optradio">5</label>
-</div>
-  </div>
-  </div>
-</div>
-</div>
+    <h4>Photo link</h4>
+    <input type="text" name="" id="photo" class="form-control" required >
 
+    <hr>
 
-<div class="panel panel-default">
- <div class="panel-heading">On a scale from 1-5, 1 being not at all and 5 being very much, how fond are you of food?</div>
-  <div class="panel-body"><div class="radio">
-   <label><input type="radio" name="optradio">1</label>
-</div> 
- <label><input type="radio" name="optradio">2</label>
-</div>
- <label><input type="radio" name="optradio">3</label>
-</div>
- <label><input type="radio" name="optradio">4</label>
-</div>
- <label><input type="radio" name="optradio">5</label>
-</div>
-  </div>
-  </div>
-</div>
-</div>
+    <h3><strong>Question 1</strong></h3>
+    <h4>You love cats.</h4>
+    <select data-placeholder="" class="chosen-select" id="q1">
+      <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+    <h3><strong>Question 2</strong></h3>
+    <h4>You enjoy sleeping.</h4>
+    <select data-placeholder="" class="chosen-select" id="q2">
+      <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+    <h3><strong>Question 3</strong></h3>
+    <h4>It's better to eat than worry.</h4>
+    <select data-placeholder="" class="chosen-select" id="q3">
+      <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+    <h3><strong>Question 4</strong></h3>
+    <h4>You like to find the sunniest spot in the house.</h4>
+    <select data-placeholder="" class="chosen-select" id="q4">
+      <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+    <h3><strong>Question 5</strong></h3>
+    <h4>Humans are cute, but pretty stupid.</h4>
+    <select data-placeholder="" class="chosen-select" id="q5">
+      <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+    <h3><strong>Question 6</strong></h3>
+    <h4>Feelings are for the weak.</h4>
+    <select data-placeholder="" class="chosen-select" id="q6">
+      <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+    <h3><strong>Question 7</strong></h3>
+    <h4>Paying strategic attention to someone to get what you want always works.</h4>
+    <select data-placeholder="" class="chosen-select" id="q7">
+      <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+    <h3><strong>Question 8</strong></h3>
+    <h4>You are the boss.</h4>
+    <select data-placeholder="" class="chosen-select" id="q8">
+      <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+ 
+    <h3><strong>Question 9</strong></h3>
+    <h4>One should spend at least 4-5 hours grooming oneself every day.</h4>
+    <select data-placeholder="" class="chosen-select" id="q9">
+      <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
 
-<div class="panel panel-default">
- <div class="panel-heading">On a scale from 1-5, 1 being not at all and 5 being very much, how much time do you spend on grooming each day?</div>
-  <div class="panel-body"><div class="radio">
-   <label><input type="radio" name="optradio">1</label>
-</div> 
- <label><input type="radio" name="optradio">2</label>
-</div>
- <label><input type="radio" name="optradio">3</label>
-</div>
- <label><input type="radio" name="optradio">4</label>
-</div>
- <label><input type="radio" name="optradio">5</label>
-</div>
-  </div>
-  </div>
-</div>
-</div>
+    <h3><strong>Question 10</strong></h3>
+    <h4>02:00 AM is the best time to start training for the olympics. Preferably as loudly as possible.</h4>
+    <select data-placeholder="" class="chosen-select" id="q10">
+      <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
 
 </body>
 </html>
